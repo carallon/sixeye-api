@@ -23,11 +23,11 @@ In general, if you are a user of a SixEye system you don't need this API - it is
    :caption: API Reference
    :hidden:
 
+   guide/version
    portals/index
    sites/index
    users/index
+   logical_devices/index
    scheduling/index
    control_panel/index
-   logical_devices/index
    permissions/index
-   guide/version
