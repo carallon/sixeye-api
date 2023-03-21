@@ -16,6 +16,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
+import datetime
 
 # -- General configuration ------------------------------------------------
 
@@ -26,7 +27,8 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.todo']
+extensions = [  'sphinx.ext.todo',
+                'sphinx_toolbox.collapse']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -41,7 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-copyright = u'2022 SixEye Ltd'
+current_year = datetime.date.today().year
+copyright = f'{current_year} SixEye Ltd'
 author = u'SixEye Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
