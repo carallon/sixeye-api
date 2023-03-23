@@ -8,7 +8,7 @@ Triggers
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/triggers``
+``GET /logical_devices/{{device_id}}/triggers``
 
 Returns a JSON object including the list of available triggers for this device. The object includes an array of triggers, with attributes for the trigger ID, type, name and description.
 
@@ -67,7 +67,7 @@ Static Scenes
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/static_scenes``
+``GET /logical_devices/{{device_id}}/static_scenes``
 
 Returns a JSON object including the list of available static scenes for this device. The object includes an array of scenes, with attributes for the scene ID, type, name and status.
 
@@ -110,7 +110,7 @@ Fixture Groups
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/fixture_groups``
+``GET /logical_devices/{{device_id}}/fixture_groups``
 
 Returns a JSON object including the list of available fixture groups for this device. The object includes an array of groups, with attributes for the scene ID, type, name and status.
 
@@ -232,7 +232,7 @@ Timelines
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/timelines``
+``GET /logical_devices/{{device_id}}/timelines``
 
 Returns a JSON object including the list of available timelines for this device. The object includes an array of timelines, with attributes for the name, length (in seconds), current time and status.
 
@@ -293,7 +293,7 @@ File Uploads
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/file_uploads``
+``GET /logical_devices/{{device_id}}/file_uploads``
 
 Returns a JSON object including the list of files which have been uploaded for this device. The object includes an array of files, with attributes for:
 
@@ -331,7 +331,7 @@ Patch
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/patch``
+``GET /logical_devices/{{device_id}}/patch``
 
 TODO - I get a 401 unauthorized for this?
 
@@ -341,7 +341,7 @@ Log
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/log_messages?lines={{lines}}&refreshRate={{refresh_rate}}``
+``GET /logical_devices/{{device_id}}/log_messages?lines={{lines}}&refreshRate={{refresh_rate}}``
 
 Requests a set of log messages from the controller. This request must be passed query parameters:
 
@@ -356,21 +356,21 @@ Snapshots
 
 Applies to ??? TODO.
 
-``GET logical_devices/{{device_id}}/snapshots``
+``GET /logical_devices/{{device_id}}/snapshots``
 
 Zones
 =====
 
 Applies to ??? TODO.
 
-``GET logical_devices/{{device_id}}/zones``
+``GET /logical_devices/{{device_id}}/zones``
 
 IO Modules
 ==========
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/io_modules``
+``GET /logical_devices/{{device_id}}/io_modules``
 
 Requests the IO modules that are in use in the currently loaded project.
 
@@ -403,7 +403,7 @@ IO Instances
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/io_instances``
+``GET /logical_devices/{{device_id}}/io_instances``
 
 Requests a list of instances of IO modules that are in use in the currently loaded project.
 
@@ -454,7 +454,7 @@ Remote Devices
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/remote_devices``
+``GET /logical_devices/{{device_id}}/remote_devices``
 
 Requests a list of remote devices in the currently loaded project.
 
@@ -483,7 +483,7 @@ Unjoined Remote Devices
 
 Applies to Pharos Controllers.
 
-``GET logical_devices/{{device_id}}/unjoined_remote_devices``
+``GET /logical_devices/{{device_id}}/unjoined_remote_devices``
 
 Requests a list of remote devices which are detected on the network, but are not in the currently loaded project.
 

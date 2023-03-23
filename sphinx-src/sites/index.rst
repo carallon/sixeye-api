@@ -38,7 +38,7 @@ A site has the following attributes:
      - The longitude of the site, in degrees
    * - ``timezoneId``
      - string
-     - The Timezone of the site, in tz database format
+     - The Timezone of the site, in `tz database <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`_ format
    * - ``offset``
      - floating point
      - TODO

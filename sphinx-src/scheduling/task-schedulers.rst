@@ -73,7 +73,7 @@ Methods
 GET
 ===
 
-``GET projects/{{project_id}}/automated_operations``
+``GET /projects/{{project_id}}/automated_operations``
 
 Returns a JSON object with a data member consisting of an array of automatedOperations objects
 
@@ -202,7 +202,7 @@ Returns a JSON object with a data member consisting of an array of automatedOper
         }
 
 
-``GET projects/{{project_id}}/automated_operations/{{automated_operation_id}}``
+``GET /projects/{{project_id}}/automated_operations/{{automated_operation_id}}``
 
 Returns a JSON object with a data member consisting of the automatedOperations object for the specified automated_operation_id, or a 404 error if the ID does not exist.
 
@@ -211,7 +211,7 @@ Returns a JSON object with a data member consisting of the automatedOperations o
 POST
 ====
 
-``POST projects/automated_operations``
+``POST /projects/automated_operations``
 
 Creates a new Task Scheduler. The body must consist of a JSON object with attributes for the name, Project ID and Task IDs to be executed by this scheduler as shown below.
 
@@ -233,7 +233,7 @@ Creates a new Task Scheduler. The body must consist of a JSON object with attrib
 PUT
 ===
 
-``PUT projects/automated_operations/{{automated_operation_id}}``
+``PUT /projects/automated_operations/{{automated_operation_id}}``
 
 Modifies an existing Task Scheduler. The body must consist of a JSON object with attributes for the items to be modified.
 
@@ -264,7 +264,7 @@ Modifies an existing Task Scheduler. The body must consist of a JSON object with
 DELETE
 ======
 
-``DELETE projects/automated_operations/{{automated_operation_id}}``
+``DELETE /projects/automated_operations/{{automated_operation_id}}``
 
 Deletes the Task Scheduler specified by ``automated_operation_id``
 

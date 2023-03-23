@@ -25,7 +25,7 @@ Transfer File
 File transfer from Device
 =========================
 
-``POST logical_devices/{{device_id}}/file_downloads/transfer``
+``POST /logical_devices/{{device_id}}/file_downloads/transfer``
 
 .. code-block:: json
 
@@ -43,7 +43,7 @@ File transfer from Device
 Download file from S3
 =====================
 
-``POST logical_devices/{{device_id}}/file_uploads/download``
+``POST /logical_devices/{{device_id}}/file_uploads/download``
 
 .. code-block:: json
 
@@ -57,7 +57,7 @@ Download file from S3
 Upload File
 ===========
 
-``POST logical_devices/{{device_id}}/file_uploads``
+``POST /logical_devices/{{device_id}}/file_uploads``
 
 .. code-block:: json
 
@@ -76,7 +76,7 @@ Upload File
 Remove File
 ===========
 
-``DELETE logical_devices/{{device_id}}/file_uploads/delete``
+``DELETE /logical_devices/{{device_id}}/file_uploads/delete``
 
 .. code-block:: json
 

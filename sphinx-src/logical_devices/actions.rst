@@ -1,6 +1,12 @@
 Device Actions
 ##############
 
+.. toctree::
+   :hidden:
+
+   action_list
+
+
 Actions are things that devices can be requested to do. The available action types will depend on the device type.
 
 GET

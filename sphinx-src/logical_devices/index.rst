@@ -62,7 +62,7 @@ Methods
 GET
 ===
 
-``GET projects/{{project_id}}/logical_devices``
+``GET /projects/{{project_id}}/logical_devices``
 
 Returns a JSON object with a data member consisting of an array of logicalDevice objects
 
@@ -271,7 +271,7 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
         }
 
 
-``GET  projects/{{project_id}}/logical_devices/{{device_id}}``
+``GET  /projects/{{project_id}}/logical_devices/{{device_id}}``
 
 Returns a JSON object with a data member consisting of the logicalDevice object for the specified device_id, or a 404 error if the ID does not exist.
 
@@ -283,7 +283,7 @@ A POST action can be used to create a new logical device, or to replace a device
 Create Logical Device
 ---------------------
 
-``POST logical_devices/connection_data``
+``POST /logical_devices/connection_data``
 
 Creates a new logical device. The body of the request should be a JSON object including the name for the device and the projectId this device should be associated with.
 
@@ -300,7 +300,7 @@ Creates a new logical device. The body of the request should be a JSON object in
 Replace Logical Device
 ----------------------
 
-``POST logical_devices/connection_data``
+``POST /logical_devices/connection_data``
 
 Replaces one logical device with another. TODO - explanation
 
@@ -343,6 +343,6 @@ DELETE
 
 The DELETE action can be used to delete a logical device
 
-``DELETE logical_devices/{{device_id}}``
+``DELETE /logical_devices/{{device_id}}``
 
 Deletes the logical device identified by ``device_id``.
