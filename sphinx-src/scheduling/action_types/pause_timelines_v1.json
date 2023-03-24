@@ -1,0 +1,16 @@
+{
+  "id": "pause_timelines_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "timelineIds",
+        "type": "array",
+        "gteq": 1,
+        "lteq": 65535,
+        "conversion": "integer",
+        "maxCount": 100
+      }
+    ]
+  }
+}

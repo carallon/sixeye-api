@@ -1,0 +1,23 @@
+{
+  "id": "port_dmx_status_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "dmxStatus",
+        "type": "string",
+        "list": [
+          "enabled",
+          "disabled",
+          "hold"
+        ]
+      },
+      {
+        "key": "dmxPortId",
+        "type": "integer",
+        "gteq": 1,
+        "lteq": 64
+      }
+    ]
+  }
+}

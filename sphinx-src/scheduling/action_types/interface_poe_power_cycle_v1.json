@@ -1,0 +1,14 @@
+{
+  "id": "interface_poe_power_cycle_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "interfaceId",
+        "type": "integer",
+        "gteq": 1,
+        "lteq": 16
+      }
+    ]
+  }
+}

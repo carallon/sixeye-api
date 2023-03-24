@@ -1,0 +1,101 @@
+{
+  "id": "start_timelines_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "timelineIds",
+        "type": "array",
+        "gteq": 1,
+        "lteq": 65535,
+        "conversion": "integer",
+        "maxCount": 100
+      },
+      {
+        "key": "releaseOthers",
+        "type": "boolean",
+        "default": false,
+        "optional": true
+      },
+      {
+        "key": "filterByType",
+        "type": "string",
+        "default": "timelines",
+        "dependentOn": [
+          {
+            "key": "releaseOthers",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "list": [
+          "all",
+          "timelines",
+          "scenes"
+        ],
+        "optional": true
+      },
+      {
+        "key": "filterByGroup",
+        "type": "string",
+        "default": "same_group",
+        "dependentOn": [
+          {
+            "key": "releaseOthers",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "list": [
+          "all",
+          "same_group",
+          "only_group",
+          "except_group"
+        ],
+        "optional": true
+      },
+      {
+        "key": "playbackGroup",
+        "type": "string",
+        "dependentOn": [
+          {
+            "key": "filterByGroup",
+            "acceptedValues": [
+              "only_group",
+              "except_group"
+            ]
+          }
+        ],
+        "list": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "optional": true
+      },
+      {
+        "key": "releaseMilliSecs",
+        "type": "integer",
+        "default": "2000",
+        "dependentOn": [
+          {
+            "key": "releaseOthers",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "gteq": 0,
+        "lteq": 86400000,
+        "optional": true
+      }
+    ]
+  }
+}

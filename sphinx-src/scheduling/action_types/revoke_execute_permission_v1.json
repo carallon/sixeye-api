@@ -1,0 +1,36 @@
+{
+  "id": "revoke_execute_permission_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "recipientType",
+        "type": "string",
+        "default": "project_suite",
+        "list": [
+          "project_suite"
+        ],
+        "optional": true
+      },
+      {
+        "key": "recipientId",
+        "type": "string",
+        "regex": "^([0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12})|(\\*)$"
+      },
+      {
+        "key": "resourceType",
+        "type": "string",
+        "default": "project",
+        "list": [
+          "project"
+        ],
+        "optional": true
+      },
+      {
+        "key": "resourceId",
+        "type": "string",
+        "regex": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$"
+      }
+    ]
+  }
+}

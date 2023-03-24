@@ -1,0 +1,19 @@
+{
+  "id": "triggers_v2",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "triggerIds",
+        "type": "string",
+        "conversion": "integer",
+        "regex": "^(\\d+(-\\d+)?)(,(\\d+(-\\d+)?))*$",
+        "maxCount": 1000
+      },
+      {
+        "key": "testConditions",
+        "type": "boolean"
+      }
+    ]
+  }
+}

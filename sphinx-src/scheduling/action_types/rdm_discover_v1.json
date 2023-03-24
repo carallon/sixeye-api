@@ -1,0 +1,14 @@
+{
+  "id": "rdm_discover_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "portId",
+        "type": "integer",
+        "gteq": 1,
+        "lteq": 8
+      }
+    ]
+  }
+}

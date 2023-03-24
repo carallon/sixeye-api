@@ -1,0 +1,62 @@
+{
+  "id": "release_all_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "filterByType",
+        "type": "string",
+        "default": "all",
+        "list": [
+          "all",
+          "timelines",
+          "scenes"
+        ],
+        "optional": true
+      },
+      {
+        "key": "filterByGroup",
+        "type": "string",
+        "default": "off",
+        "list": [
+          "off",
+          "only_group",
+          "except_group"
+        ],
+        "optional": true
+      },
+      {
+        "key": "playbackGroup",
+        "type": "string",
+        "dependentOn": [
+          {
+            "key": "filterByGroup",
+            "acceptedValues": [
+              "only_group",
+              "except_group"
+            ]
+          }
+        ],
+        "list": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H"
+        ],
+        "optional": true
+      },
+      {
+        "key": "releaseMilliSecs",
+        "type": "integer",
+        "default": "2000",
+        "gteq": 0,
+        "lteq": 86400000,
+        "optional": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "toggle_scenes_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "sceneIds",
+        "type": "array",
+        "gteq": 1,
+        "lteq": 65535,
+        "conversion": "integer",
+        "maxCount": 100
+      },
+      {
+        "key": "releaseMilliSecs",
+        "type": "integer",
+        "default": "2000",
+        "gteq": 0,
+        "lteq": 86400000,
+        "optional": true
+      }
+    ]
+  }
+}

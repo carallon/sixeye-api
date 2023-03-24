@@ -1,0 +1,14 @@
+{
+  "id": "fire_snapshot_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "snapshotId",
+        "type": "integer",
+        "gteq": 1,
+        "lteq": 64
+      }
+    ]
+  }
+}

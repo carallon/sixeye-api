@@ -1,0 +1,14 @@
+{
+  "id": "toggle_timeline_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "timelineId",
+        "type": "integer",
+        "gteq": 1,
+        "lteq": 65535
+      }
+    ]
+  }
+}

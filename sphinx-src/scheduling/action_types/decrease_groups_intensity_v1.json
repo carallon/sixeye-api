@@ -1,0 +1,55 @@
+{
+  "id": "decrease_groups_intensity_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "filterByGroups",
+        "type": "boolean",
+        "default": false,
+        "optional": true
+      },
+      {
+        "key": "groupIds",
+        "type": "array",
+        "dependentOn": [
+          {
+            "key": "filterByGroups",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "gteq": 1,
+        "lteq": 65535,
+        "conversion": "integer",
+        "optional": true,
+        "maxCount": 100
+      },
+      {
+        "key": "step",
+        "type": "float",
+        "default": "5.00",
+        "gteq": 0.0,
+        "lteq": 100.0,
+        "optional": true
+      },
+      {
+        "key": "fadeMilliSecs",
+        "type": "integer",
+        "default": "2000",
+        "gteq": 0,
+        "lteq": 1800000000,
+        "optional": true
+      },
+      {
+        "key": "delayMilliSecs",
+        "type": "integer",
+        "default": "0",
+        "gteq": 0,
+        "lteq": 1800000000,
+        "optional": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "beacon_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "enabled",
+        "type": "boolean"
+      }
+    ]
+  }
+}

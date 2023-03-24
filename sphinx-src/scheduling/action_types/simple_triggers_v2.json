@@ -1,0 +1,18 @@
+{
+  "id": "simple_triggers_v2",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "triggerIds",
+        "type": "array",
+        "conversion": "integer",
+        "maxCount": 100
+      },
+      {
+        "key": "testConditions",
+        "type": "boolean"
+      }
+    ]
+  }
+}

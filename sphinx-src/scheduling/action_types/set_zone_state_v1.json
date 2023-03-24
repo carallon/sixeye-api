@@ -1,0 +1,18 @@
+{
+  "id": "set_zone_state_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "zoneId",
+        "type": "integer",
+        "gteq": 1,
+        "lteq": 64
+      },
+      {
+        "key": "enabled",
+        "type": "boolean"
+      }
+    ]
+  }
+}

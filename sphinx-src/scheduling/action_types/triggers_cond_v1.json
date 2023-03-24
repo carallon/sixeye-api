@@ -1,0 +1,21 @@
+{
+  "id": "triggers_cond_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "triggerIds",
+        "type": "string",
+        "conversion": "integer",
+        "regex": "^([1-9][0-9]*(-[1-9][0-9]*)?)(,([1-9][0-9]*(-[1-9][0-9]*)?))*$",
+        "maxCount": 1000
+      },
+      {
+        "key": "testConditions",
+        "type": "boolean",
+        "default": true,
+        "optional": true
+      }
+    ]
+  }
+}

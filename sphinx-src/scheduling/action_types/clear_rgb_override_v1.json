@@ -1,0 +1,58 @@
+{
+  "id": "clear_rgb_override_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "target",
+        "type": "string",
+        "default": "group",
+        "list": [
+          "fixture",
+          "group"
+        ]
+      },
+      {
+        "key": "fixtureIds",
+        "type": "string",
+        "dependentOn": [
+          {
+            "key": "target",
+            "acceptedValues": [
+              "fixture"
+            ]
+          }
+        ],
+        "conversion": "integer",
+        "regex": "^([1-9][0-9]*(-[1-9][0-9]*)?)(,([1-9][0-9]*(-[1-9][0-9]*)?))*$",
+        "optional": true,
+        "maxCount": 1000
+      },
+      {
+        "key": "groupIds",
+        "type": "array",
+        "dependentOn": [
+          {
+            "key": "target",
+            "acceptedValues": [
+              "group"
+            ]
+          }
+        ],
+        "gteq": 1,
+        "lteq": 65535,
+        "conversion": "integer",
+        "optional": true,
+        "maxCount": 100
+      },
+      {
+        "key": "fadeMilliSecs",
+        "type": "integer",
+        "default": "2000",
+        "gteq": 0,
+        "lteq": 1800000000,
+        "optional": true
+      }
+    ]
+  }
+}

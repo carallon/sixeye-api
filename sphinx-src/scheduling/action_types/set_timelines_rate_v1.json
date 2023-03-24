@@ -1,0 +1,24 @@
+{
+  "id": "set_timelines_rate_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "timelineIds",
+        "type": "array",
+        "gteq": 1,
+        "lteq": 65535,
+        "conversion": "integer",
+        "maxCount": 100
+      },
+      {
+        "key": "rate",
+        "type": "float",
+        "default": "100.00",
+        "gteq": 0.0,
+        "lteq": 10000.0,
+        "optional": true
+      }
+    ]
+  }
+}

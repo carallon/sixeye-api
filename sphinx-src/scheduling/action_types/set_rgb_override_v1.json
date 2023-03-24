@@ -1,0 +1,200 @@
+{
+  "id": "set_rgb_override_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "target",
+        "type": "string",
+        "default": "group",
+        "list": [
+          "fixture",
+          "group"
+        ]
+      },
+      {
+        "key": "fixtureIds",
+        "type": "string",
+        "dependentOn": [
+          {
+            "key": "target",
+            "acceptedValues": [
+              "fixture"
+            ]
+          }
+        ],
+        "conversion": "integer",
+        "regex": "^([1-9][0-9]*(-[1-9][0-9]*)?)(,([1-9][0-9]*(-[1-9][0-9]*)?))*$",
+        "optional": true,
+        "maxCount": 1000
+      },
+      {
+        "key": "groupIds",
+        "type": "array",
+        "dependentOn": [
+          {
+            "key": "target",
+            "acceptedValues": [
+              "group"
+            ]
+          }
+        ],
+        "gteq": 1,
+        "lteq": 65535,
+        "conversion": "integer",
+        "optional": true,
+        "maxCount": 100
+      },
+      {
+        "key": "fadeMilliSecs",
+        "type": "integer",
+        "default": "2000",
+        "gteq": 0,
+        "lteq": 1800000000,
+        "optional": true
+      },
+      {
+        "key": "path",
+        "type": "string",
+        "default": "default",
+        "list": [
+          "default",
+          "linear",
+          "start",
+          "end",
+          "braked",
+          "accelerated",
+          "damped",
+          "overshoot",
+          "col_at_start",
+          "col_at_end",
+          "int_at_start",
+          "int_at_end",
+          "colour_first",
+          "intensity_first"
+        ],
+        "optional": true
+      },
+      {
+        "key": "enableIntensity",
+        "type": "boolean",
+        "default": true,
+        "optional": true
+      },
+      {
+        "key": "intensity",
+        "type": "float",
+        "default": "100.00",
+        "apiIgnoreDependentOn": true,
+        "dependentOn": [
+          {
+            "key": "enableIntensity",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "gteq": 0.0,
+        "lteq": 100.0,
+        "optional": true
+      },
+      {
+        "key": "enableRed",
+        "type": "boolean",
+        "default": true,
+        "optional": true
+      },
+      {
+        "key": "red",
+        "type": "float",
+        "default": "0.00",
+        "apiIgnoreDependentOn": true,
+        "dependentOn": [
+          {
+            "key": "enableRed",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "gteq": 0.0,
+        "lteq": 100.0,
+        "optional": true
+      },
+      {
+        "key": "enableGreen",
+        "type": "boolean",
+        "default": true,
+        "optional": true
+      },
+      {
+        "key": "green",
+        "type": "float",
+        "default": "0.00",
+        "apiIgnoreDependentOn": true,
+        "dependentOn": [
+          {
+            "key": "enableGreen",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "gteq": 0.0,
+        "lteq": 100.0,
+        "optional": true
+      },
+      {
+        "key": "enableBlue",
+        "type": "boolean",
+        "default": true,
+        "optional": true
+      },
+      {
+        "key": "blue",
+        "type": "float",
+        "default": "0.00",
+        "apiIgnoreDependentOn": true,
+        "dependentOn": [
+          {
+            "key": "enableBlue",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "gteq": 0.0,
+        "lteq": 100.0,
+        "optional": true
+      },
+      {
+        "key": "enableTemperature",
+        "type": "boolean",
+        "default": true,
+        "optional": true
+      },
+      {
+        "key": "temperature",
+        "type": "float",
+        "default": "50.00",
+        "apiIgnoreDependentOn": true,
+        "dependentOn": [
+          {
+            "key": "enableTemperature",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "gteq": 0.0,
+        "lteq": 100.0,
+        "optional": true
+      },
+      {
+        "key": "enableColourPicker",
+        "type": "none",
+        "optional": true
+      }
+    ]
+  }
+}

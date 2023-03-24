@@ -1,0 +1,55 @@
+{
+  "id": "decrease_content_target_intensity_filtered_v1",
+  "type": "actionTypes",
+  "attributes": {
+    "params": [
+      {
+        "key": "filterByContentTarget",
+        "type": "boolean",
+        "default": false,
+        "optional": true
+      },
+      {
+        "key": "contentTarget",
+        "type": "string",
+        "dependentOn": [
+          {
+            "key": "filterByContentTarget",
+            "acceptedValues": [
+              true
+            ]
+          }
+        ],
+        "list": [
+          "primary",
+          "secondary"
+        ],
+        "optional": true
+      },
+      {
+        "key": "step",
+        "type": "float",
+        "default": "5.00",
+        "gteq": 0.0,
+        "lteq": 100.0,
+        "optional": true
+      },
+      {
+        "key": "fadeMilliSecs",
+        "type": "integer",
+        "default": "2000",
+        "gteq": 0,
+        "lteq": 1800000000,
+        "optional": true
+      },
+      {
+        "key": "delayMilliSecs",
+        "type": "integer",
+        "default": "0",
+        "gteq": 0,
+        "lteq": 1800000000,
+        "optional": true
+      }
+    ]
+  }
+}
