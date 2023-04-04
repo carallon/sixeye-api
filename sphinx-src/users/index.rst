@@ -27,9 +27,6 @@ A user has the following attributes:
    * - ``phoneNumber``
      - string
      - The contact phone number of the user
-   * - ``superadmin``
-     - boolean
-     - Whether or not this user is a superadmin
    * - ``suspended``
      - boolean
      - Whether or not this user's account is suspended
@@ -70,13 +67,11 @@ Returns a JSON object with an array of users
                         "lastName": "Manager",
                         "email": "joe.manager@example.com",
                         "phoneNumber": "123456789",
-                        "superadmin": true,
                         "suspended": false,
                         "lastLoginTime": "2023-03-08T10:18:38.501+00:00",
                         "lastActionTime": "2023-03-16T13:32:26.056+00:00",
                         "twoFactorEnabled": true,
-                        "tenantAdmin": false,
-                        "superAdmin": true
+                        "tenantAdmin": false
                     }
                 },
                 {
@@ -87,13 +82,11 @@ Returns a JSON object with an array of users
                         "lastName": "User",
                         "email": "bob.user@example.com",
                         "phoneNumber": "+1 234 567 890",
-                        "superadmin": false,
                         "suspended": false,
                         "lastLoginTime": "2023-03-13T10:37:02.176+00:00",
                         "lastActionTime": "2023-03-14T16:12:51.626+00:00",
                         "twoFactorEnabled": false,
-                        "tenantAdmin": false,
-                        "superAdmin": false
+                        "tenantAdmin": false
                     }
                 }
             ]
@@ -120,13 +113,11 @@ Returns a JSON object with a singular data item for the user, or a 404 error if 
                     "lastName": "User",
                     "email": "bob.user@example.com",
                     "phoneNumber": "+1 234 567 890",
-                    "superadmin": false,
                     "suspended": false,
                     "lastLoginTime": "2023-03-13T10:37:02.176+00:00",
                     "lastActionTime": "2023-03-14T16:12:51.626+00:00",
                     "twoFactorEnabled": false,
-                    "tenantAdmin": false,
-                    "superAdmin": false
+                    "tenantAdmin": false
                 }
             }
         }
