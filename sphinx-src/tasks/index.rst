@@ -48,9 +48,6 @@ Retrieves a list of tasks for the given ``project_id``.
                 {
                     "id": "65b4aa94-07af-4624-a588-57580af0c148",
                     "type": "tasks",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/tasks/65b4aa94-07af-4624-a588-57580af0c148"
-                    },
                     "attributes": {
                         "name": "Toggle Beacon device Fake LPC",
                         "description": "Toggle Beacon device Fake LPC",
@@ -85,28 +82,11 @@ Retrieves a list of tasks for the given ``project_id``.
                         "projectId": "0da10710-4240-4f5c-81a7-cb8bca666d3b",
                         "lockVersion": "1",
                         "projectSuiteId": null
-                    },
-                    "relationships": {
-                        "project": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/tasks/65b4aa94-07af-4624-a588-57580af0c148/relationships/project",
-                                "related": "https://primary.sixeye-api.com/tasks/65b4aa94-07af-4624-a588-57580af0c148/project"
-                            }
-                        },
-                        "projectSuite": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/tasks/65b4aa94-07af-4624-a588-57580af0c148/relationships/project_suite",
-                                "related": "https://primary.sixeye-api.com/tasks/65b4aa94-07af-4624-a588-57580af0c148/project_suite"
-                            }
-                        }
                     }
                 },
                 {
                     "id": "8b62d558-80d2-4411-add8-8a4bf4d4d686",
                     "type": "tasks",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/tasks/8b62d558-80d2-4411-add8-8a4bf4d4d686"
-                    },
                     "attributes": {
                         "name": "Tom Test Task",
                         "description": "Toms Test",
@@ -114,20 +94,6 @@ Retrieves a list of tasks for the given ``project_id``.
                         "projectId": "0da10710-4240-4f5c-81a7-cb8bca666d3b",
                         "lockVersion": "0",
                         "projectSuiteId": null
-                    },
-                    "relationships": {
-                        "project": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/tasks/8b62d558-80d2-4411-add8-8a4bf4d4d686/relationships/project",
-                                "related": "https://primary.sixeye-api.com/tasks/8b62d558-80d2-4411-add8-8a4bf4d4d686/project"
-                            }
-                        },
-                        "projectSuite": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/tasks/8b62d558-80d2-4411-add8-8a4bf4d4d686/relationships/project_suite",
-                                "related": "https://primary.sixeye-api.com/tasks/8b62d558-80d2-4411-add8-8a4bf4d4d686/project_suite"
-                            }
-                        }
                     }
                 }
             ]

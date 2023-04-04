@@ -65,9 +65,6 @@ Returns a JSON object with an array of users
                 {
                     "id": "465acd55-6e48-4297-839f-bc0f7d70020b",
                     "type": "users",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b"
-                    },
                     "attributes": {
                         "firstName": "Joe",
                         "lastName": "Manager",
@@ -85,9 +82,6 @@ Returns a JSON object with an array of users
                 {
                     "id": "dfd54e1f-3bce-4322-a935-f98ba97a9201",
                     "type": "users",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201"
-                    },
                     "attributes": {
                         "firstName": "Bob",
                         "lastName": "User",
@@ -121,9 +115,6 @@ Returns a JSON object with a singular data item for the user, or a 404 error if 
             "data": {
                 "id": "dfd54e1f-3bce-4322-a935-f98ba97a9201",
                 "type": "users",
-                "links": {
-                    "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201"
-                },
                 "attributes": {
                     "firstName": "Bob",
                     "lastName": "User",

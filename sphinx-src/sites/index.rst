@@ -101,9 +101,6 @@ Returns a JSON object with an array of sites
                 {
                     "id": "0da10710-4240-4f5c-81a7-cb8bca666d3b",
                     "type": "projects",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b"
-                    },
                     "attributes": {
                         "name": "TomSite",
                         "usersCount": 2,
@@ -136,68 +133,6 @@ Returns a JSON object with an array of sites
                         "offlineDevices": 0,
                         "unassociatedDevices": 0,
                         "devicesForUpgrade": 0
-                    },
-                    "relationships": {
-                        "users": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/users",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/users"
-                            }
-                        },
-                        "logicalDevices": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/logical_devices",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/logical_devices"
-                            }
-                        },
-                        "shareableApiKeys": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/shareable_api_keys",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/shareable_api_keys"
-                            }
-                        },
-                        "notifications": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/notifications",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/notifications"
-                            }
-                        },
-                        "tasks": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/tasks",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/tasks"
-                            }
-                        },
-                        "automatedOperations": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/automated_operations",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/automated_operations"
-                            }
-                        },
-                        "aoOccurrences": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/ao_occurrences",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/ao_occurrences"
-                            }
-                        },
-                        "controlPanelPage": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/control_panel_page",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/control_panel_page"
-                            }
-                        },
-                        "projectSuites": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/project_suites",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/project_suites"
-                            }
-                        },
-                        "actionTypesList": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/action_types_list",
-                                "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/action_types_list"
-                            }
-                        }
                     }
                 }
             ]
@@ -219,9 +154,6 @@ Returns a JSON object with a singular data item for the site, or a 404 error if 
             "data": {
                 "id": "0da10710-4240-4f5c-81a7-cb8bca666d3b",
                 "type": "projects",
-                "links": {
-                    "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b"
-                },
                 "attributes": {
                     "name": "TomSite",
                     "usersCount": 2,
@@ -254,68 +186,6 @@ Returns a JSON object with a singular data item for the site, or a 404 error if 
                     "offlineDevices": 0,
                     "unassociatedDevices": 0,
                     "devicesForUpgrade": 0
-                },
-                "relationships": {
-                    "users": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/users",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/users"
-                        }
-                    },
-                    "logicalDevices": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/logical_devices",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/logical_devices"
-                        }
-                    },
-                    "shareableApiKeys": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/shareable_api_keys",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/shareable_api_keys"
-                        }
-                    },
-                    "notifications": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/notifications",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/notifications"
-                        }
-                    },
-                    "tasks": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/tasks",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/tasks"
-                        }
-                    },
-                    "automatedOperations": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/automated_operations",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/automated_operations"
-                        }
-                    },
-                    "aoOccurrences": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/ao_occurrences",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/ao_occurrences"
-                        }
-                    },
-                    "controlPanelPage": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/control_panel_page",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/control_panel_page"
-                        }
-                    },
-                    "projectSuites": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/project_suites",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/project_suites"
-                        }
-                    },
-                    "actionTypesList": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/relationships/action_types_list",
-                            "related": "https://primary.sixeye-api.com/projects/0da10710-4240-4f5c-81a7-cb8bca666d3b/action_types_list"
-                        }
-                    }
                 }
             }
         }

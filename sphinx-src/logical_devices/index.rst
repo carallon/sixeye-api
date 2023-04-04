@@ -64,9 +64,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                 {
                     "id": "00ec20e6-e8e4-4ed9-a640-5615e1a409b0",
                     "type": "logicalDevices",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0"
-                    },
                     "attributes": {
                         "name": "Fake LPC",
                         "model": "LPC",
@@ -89,9 +86,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                 {
                     "id": "086e0ea4-908d-4147-a1e0-3946e1de3b00",
                     "type": "logicalDevices",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/logical_devices/086e0ea4-908d-4147-a1e0-3946e1de3b00"
-                    },
                     "attributes": {
                         "name": "Fake M-TS 5",
                         "model": "M-TS 5",
@@ -114,9 +108,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                 {
                     "id": "489f36a7-11ac-4b84-af63-18f833885d0b",
                     "type": "logicalDevices",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/logical_devices/489f36a7-11ac-4b84-af63-18f833885d0b"
-                    },
                     "attributes": {
                         "name": "Fake M-TS",
                         "model": "M-TS",
@@ -139,9 +130,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                 {
                     "id": "69b9bfd4-372f-4210-9c11-d11324067c04",
                     "type": "logicalDevices",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/logical_devices/69b9bfd4-372f-4210-9c11-d11324067c04"
-                    },
                     "attributes": {
                         "name": "Fake TPS 5",
                         "model": "TPS 5",
@@ -164,9 +152,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                 {
                     "id": "f1dca926-10ac-4bb6-b9d3-47e00d8ed216",
                     "type": "logicalDevices",
-                    "links": {
-                        "self": "https://primary.sixeye-api.com/logical_devices/f1dca926-10ac-4bb6-b9d3-47e00d8ed216"
-                    },
                     "attributes": {
                         "name": "Fake TPS",
                         "model": "TPS",
@@ -204,9 +189,6 @@ Returns a JSON object with a data member consisting of a single logicalDevices o
             "data": {
                 "id": "00ec20e6-e8e4-4ed9-a640-5615e1a409b0",
                 "type": "logicalDevices",
-                "links": {
-                    "self": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0"
-                },
                 "attributes": {
                     "name": "Fake LPC",
                     "model": "LPC",
