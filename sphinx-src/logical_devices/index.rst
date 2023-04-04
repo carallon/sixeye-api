@@ -84,20 +84,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                         "attachedAt": "2023-03-13T10:33:09.977+00:00",
                         "detachedAt": null,
                         "label": "LPC"
-                    },
-                    "relationships": {
-                        "notifications": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/relationships/notifications",
-                                "related": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/notifications"
-                            }
-                        },
-                        "deviceActionTypesList": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/relationships/device_action_types_list",
-                                "related": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/device_action_types_list"
-                            }
-                        }
                     }
                 },
                 {
@@ -123,20 +109,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                         "attachedAt": "2023-03-13T10:33:23.487+00:00",
                         "detachedAt": null,
                         "label": "M-TS 5"
-                    },
-                    "relationships": {
-                        "notifications": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/086e0ea4-908d-4147-a1e0-3946e1de3b00/relationships/notifications",
-                                "related": "https://primary.sixeye-api.com/logical_devices/086e0ea4-908d-4147-a1e0-3946e1de3b00/notifications"
-                            }
-                        },
-                        "deviceActionTypesList": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/086e0ea4-908d-4147-a1e0-3946e1de3b00/relationships/device_action_types_list",
-                                "related": "https://primary.sixeye-api.com/logical_devices/086e0ea4-908d-4147-a1e0-3946e1de3b00/device_action_types_list"
-                            }
-                        }
                     }
                 },
                 {
@@ -162,20 +134,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                         "attachedAt": "2023-03-13T10:33:16.801+00:00",
                         "detachedAt": null,
                         "label": "M-TS"
-                    },
-                    "relationships": {
-                        "notifications": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/489f36a7-11ac-4b84-af63-18f833885d0b/relationships/notifications",
-                                "related": "https://primary.sixeye-api.com/logical_devices/489f36a7-11ac-4b84-af63-18f833885d0b/notifications"
-                            }
-                        },
-                        "deviceActionTypesList": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/489f36a7-11ac-4b84-af63-18f833885d0b/relationships/device_action_types_list",
-                                "related": "https://primary.sixeye-api.com/logical_devices/489f36a7-11ac-4b84-af63-18f833885d0b/device_action_types_list"
-                            }
-                        }
                     }
                 },
                 {
@@ -201,20 +159,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                         "attachedAt": "2023-03-13T10:33:03.095+00:00",
                         "detachedAt": null,
                         "label": "TPS 5"
-                    },
-                    "relationships": {
-                        "notifications": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/69b9bfd4-372f-4210-9c11-d11324067c04/relationships/notifications",
-                                "related": "https://primary.sixeye-api.com/logical_devices/69b9bfd4-372f-4210-9c11-d11324067c04/notifications"
-                            }
-                        },
-                        "deviceActionTypesList": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/69b9bfd4-372f-4210-9c11-d11324067c04/relationships/device_action_types_list",
-                                "related": "https://primary.sixeye-api.com/logical_devices/69b9bfd4-372f-4210-9c11-d11324067c04/device_action_types_list"
-                            }
-                        }
                     }
                 },
                 {
@@ -240,20 +184,6 @@ Returns a JSON object with a data member consisting of an array of logicalDevice
                         "attachedAt": "2023-03-13T10:32:55.412+00:00",
                         "detachedAt": null,
                         "label": "TPS"
-                    },
-                    "relationships": {
-                        "notifications": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/f1dca926-10ac-4bb6-b9d3-47e00d8ed216/relationships/notifications",
-                                "related": "https://primary.sixeye-api.com/logical_devices/f1dca926-10ac-4bb6-b9d3-47e00d8ed216/notifications"
-                            }
-                        },
-                        "deviceActionTypesList": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/logical_devices/f1dca926-10ac-4bb6-b9d3-47e00d8ed216/relationships/device_action_types_list",
-                                "related": "https://primary.sixeye-api.com/logical_devices/f1dca926-10ac-4bb6-b9d3-47e00d8ed216/device_action_types_list"
-                            }
-                        }
                     }
                 }
             ]
@@ -288,20 +218,6 @@ Returns a JSON object with a data member consisting of a single logicalDevices o
                     "attachedAt": "2023-03-13T10:33:09.977+00:00",
                     "detachedAt": null,
                     "label": "LPC"
-                },
-                "relationships": {
-                    "notifications": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/relationships/notifications",
-                            "related": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/notifications"
-                        }
-                    },
-                    "deviceActionTypesList": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/relationships/device_action_types_list",
-                            "related": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0/device_action_types_list"
-                        }
-                    }
                 }
             }
         }

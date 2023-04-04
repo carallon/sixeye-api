@@ -80,32 +80,6 @@ Returns a JSON object with an array of users
                         "twoFactorEnabled": true,
                         "tenantAdmin": false,
                         "superAdmin": true
-                    },
-                    "relationships": {
-                        "projects": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/relationships/projects",
-                                "related": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/projects"
-                            }
-                        },
-                        "projectSuites": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/relationships/project_suites",
-                                "related": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/project_suites"
-                            }
-                        },
-                        "receivedInvitations": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/relationships/received_invitations",
-                                "related": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/received_invitations"
-                            }
-                        },
-                        "sentInvitations": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/relationships/sent_invitations",
-                                "related": "https://primary.sixeye-api.com/users/465acd55-6e48-4297-839f-bc0f7d70020b/sent_invitations"
-                            }
-                        }
                     }
                 },
                 {
@@ -126,32 +100,6 @@ Returns a JSON object with an array of users
                         "twoFactorEnabled": false,
                         "tenantAdmin": false,
                         "superAdmin": false
-                    },
-                    "relationships": {
-                        "projects": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/projects",
-                                "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/projects"
-                            }
-                        },
-                        "projectSuites": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/project_suites",
-                                "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/project_suites"
-                            }
-                        },
-                        "receivedInvitations": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/received_invitations",
-                                "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/received_invitations"
-                            }
-                        },
-                        "sentInvitations": {
-                            "links": {
-                                "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/sent_invitations",
-                                "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/sent_invitations"
-                            }
-                        }
                     }
                 }
             ]
@@ -188,32 +136,6 @@ Returns a JSON object with a singular data item for the user, or a 404 error if 
                     "twoFactorEnabled": false,
                     "tenantAdmin": false,
                     "superAdmin": false
-                },
-                "relationships": {
-                    "projects": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/projects",
-                            "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/projects"
-                        }
-                    },
-                    "projectSuites": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/project_suites",
-                            "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/project_suites"
-                        }
-                    },
-                    "receivedInvitations": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/received_invitations",
-                            "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/received_invitations"
-                        }
-                    },
-                    "sentInvitations": {
-                        "links": {
-                            "self": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/relationships/sent_invitations",
-                            "related": "https://primary.sixeye-api.com/users/dfd54e1f-3bce-4322-a935-f98ba97a9201/sent_invitations"
-                        }
-                    }
                 }
             }
         }
