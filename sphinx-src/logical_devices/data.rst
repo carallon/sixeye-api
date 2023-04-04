@@ -58,8 +58,7 @@ Returns a JSON object including the list of available triggers for this device. 
                         "description": "When triggered"
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 Static Scenes
@@ -101,8 +100,7 @@ Returns a JSON object including the list of available static scenes for this dev
                         "status": null
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 Fixture Groups
@@ -220,8 +218,7 @@ Returns a JSON object including the list of available fixture groups for this de
                         "type": "auto"
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 Timelines
@@ -280,8 +277,7 @@ Returns a JSON object including the list of available timelines for this device.
                         "status": null
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 Patch
@@ -401,8 +397,7 @@ Returns data about the patched universes, local and eDMX, for the device.
                         ]
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 Log
@@ -482,8 +477,7 @@ Requests a set of log messages from the controller. This request must be passed 
                         "severityLevel": 4
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 IO Modules
@@ -515,8 +509,7 @@ Requests the IO modules that are in use in the currently loaded project.
                         "label": "Set Status Vars"
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 IO Instances
@@ -566,8 +559,7 @@ Requests a list of instances of IO modules that are in use in the currently load
                         }
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
 
 Remote Devices
@@ -594,6 +586,5 @@ Requests a list of remote devices in the currently loaded project.
                         "type": "EDN 20"
                     }
                 }
-            ],
-            "meta": {}
+            ]
         }
