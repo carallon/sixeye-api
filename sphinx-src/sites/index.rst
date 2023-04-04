@@ -74,7 +74,7 @@ A site has the following attributes:
      - The number of devices reporting as offline
    * - ``unassociatedDevices``
      - integer
-     - The number of devices online but not associated with the SixEye system
+     - The number of logical devices, where the real devices were removed from the SixEye system or moved to another logical device
    * - ``devicesForUpgrade``
      - integer
      - The number of devices that have firmware upgrades available
