@@ -284,45 +284,6 @@ Returns a JSON object including the list of available timelines for this device.
             "meta": {}
         }
 
-
-File Uploads
-============
-
-Applies to Pharos Controllers.
-
-``GET /logical_devices/{{device_id}}/file_uploads``
-
-Returns a JSON object including the list of files which have been uploaded for this device. The object includes an array of files, with attributes for:
-
-* File Type
-* File Name
-* Last modified date (in Unix time format)
-* HTTP ETag (a unique identifier for the file)
-* File Size (in Bytes)
-
-
-.. collapse:: Example response
-
-    .. code-block:: json
-
-        {
-            "data": [
-                {
-                    "id": "7a7f5e6e-3354-4a14-afc8-ad56831bc852",
-                    "type": "fileUploads",
-                    "attributes": {
-                        "fileType": "proj",
-                        "fileName": "my_project.pd2",
-                        "lastModified": 1679405147,
-                        "etag": "\"66465aa318494ecb2f667c892749cd28-1\"",
-                        "size": 9457
-                    }
-                }
-            ],
-            "meta": {}
-        }
-
-
 Patch
 =====
 
