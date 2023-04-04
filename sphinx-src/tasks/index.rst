@@ -49,12 +49,12 @@ Retrieves a list of tasks for the given ``project_id``.
                     "id": "65b4aa94-07af-4624-a588-57580af0c148",
                     "type": "tasks",
                     "attributes": {
-                        "name": "Toggle Beacon device Fake LPC",
-                        "description": "Toggle Beacon device Fake LPC",
+                        "name": "Toggle Beacon device Control Room LPC",
+                        "description": "Toggle Beacon device  Control Room LPC",
                         "actions": [
                             {
                                 "id": "6505f7a4-6dc9-4576-a9cc-eed752da51b3",
-                                "name": "Beacon - Fake LPC",
+                                "name": "Beacon - Control Room LPC",
                                 "index": 0,
                                 "typeId": "beacon_v1",
                                 "logicalDeviceId": "00ec20e6-e8e4-4ed9-a640-5615e1a409b0",
@@ -67,7 +67,7 @@ Retrieves a list of tasks for the given ``project_id``.
                             },
                             {
                                 "id": "ba4a97bc-f6af-49d5-b490-c42aa65bc32d",
-                                "name": "Beacon - Fake LPC",
+                                "name": "Beacon - Control Room LPC",
                                 "index": 1,
                                 "typeId": "beacon_v1",
                                 "logicalDeviceId": "00ec20e6-e8e4-4ed9-a640-5615e1a409b0",
