@@ -16,9 +16,9 @@ Here is an example of a response (in this case from the ``GET /projects/{{projec
                     "self": "https://primary.sixeye-api.com/logical_devices/00ec20e6-e8e4-4ed9-a640-5615e1a409b0"
                 },
                 "attributes": {
-                    "name": "Fake LPC",
+                    "name": "Facade LPC",
                     "model": "LPC",
-                    "serialNumber": "FAKELPC",
+                    "serialNumber": "0123456",
                     "manufacturerName": "Pharos Controls",
                     "deviceAssigned": "5580aa7d-e647-4f13-a180-114655910846",
                     "online": true,
@@ -55,9 +55,9 @@ Here is an example of a response (in this case from the ``GET /projects/{{projec
                     "self": "https://primary.sixeye-api.com/logical_devices/086e0ea4-908d-4147-a1e0-3946e1de3b00"
                 },
                 "attributes": {
-                    "name": "Fake M-TS 5",
+                    "name": "Control Room M-TS 5",
                     "model": "M-TS 5",
-                    "serialNumber": "FAKEMTS5",
+                    "serialNumber": "98765432",
                     "manufacturerName": "ETC",
                     "deviceAssigned": "80638a1e-5bce-4b3f-b17e-6c804afcb95e",
                     "online": true,
