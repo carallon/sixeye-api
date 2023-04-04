@@ -3,6 +3,8 @@ Device Data
 
 The Device Data API allows you to query devices for information about their current status.
 
+Each GET returns the last known state and initiates communication with the device to retrieve an update. It is recommended to make two requests to fetch most current status.
+
 Triggers
 ========
 
