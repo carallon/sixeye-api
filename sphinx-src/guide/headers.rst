@@ -13,9 +13,9 @@ When sending an HTTP request to the API, we recommend the following headers are 
    * - ``Origin``
      - The base URL of the application being accessed
      - ``Origin: https://cloud.pharoscontrols.com``
-   * - ``Authentication``
+   * - ``Authorization``
      - The authentication token as described in :doc:`authentication`
-     - ``Authentication: "Bearer {{token}}"``
+     - ``Authorization: "Bearer {{token}}"``
    * - ``Accept``
      - When getting data, we recommend Accept be set to ``application/vnd.api+json``
      - ``Accept: application/vnd.api+json``
