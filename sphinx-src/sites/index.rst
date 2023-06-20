@@ -142,7 +142,7 @@ Returns a JSON object with an array of sites
 Get a Single Site
 =================
 
-``GET /projects/{project_uuid}``
+``GET /projects/{{project_uuid}}``
 
 Returns a JSON object with a singular data item for the site, or a 404 error if the project (site) UUID is not recognized.
 
