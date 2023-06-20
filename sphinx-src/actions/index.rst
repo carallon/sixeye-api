@@ -62,7 +62,7 @@ Trigger an Action
 
 An action can be triggered using a POST call to the API:
 
-POST /actions/execute
+``POST /actions/execute``
 
 The body of the request must include a JSON object which includes:
 
