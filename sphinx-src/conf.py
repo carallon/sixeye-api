@@ -28,7 +28,8 @@ import datetime
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [  'sphinx.ext.todo',
-                'sphinx_toolbox.collapse']
+                'sphinx_toolbox.collapse',
+                'sphinx.ext.autosectionlabel']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

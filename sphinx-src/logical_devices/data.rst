@@ -5,10 +5,54 @@ The Device Data API allows you to query devices for information about their curr
 
 Each GET returns the last known state and initiates communication with the device to retrieve an update. It is recommended to make two requests to fetch most current status.
 
+There are different calls available based on device type. They are listed below.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Call Name
+     - Supported in Pharos / Mosaic Designer
+     - Supported in Pharos Expert
+   * - :ref:`Triggers`
+     - ✅
+     - ❌
+   * - :ref:`Static Scenes`
+     - ✅
+     - ❌
+   * - :ref:`Fixture Groups`
+     - ✅
+     - ❌
+   * - :ref:`Timelines`
+     - ✅
+     - ❌
+   * - :ref:`Patch`
+     - ✅
+     - ✅
+   * - :ref:`Log`
+     - ✅
+     - ✅
+   * - :ref:`IO Modules`
+     - ✅
+     - ❌
+   * - :ref:`IO Instances`
+     - ✅
+     - ❌
+   * - :ref:`Remote Devices`
+     - ✅
+     - ❌
+   * - :ref:`Expert Scenes`
+     - ❌
+     - ✅
+   * - :ref:`Expert Spaces`
+     - ❌
+     - ✅
+   * - :ref:`Expert Tag Sets`
+     - ❌
+     - ✅
+
+
 Triggers
 ========
-
-.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/triggers``
 
@@ -66,8 +110,6 @@ Returns a JSON object including the list of available triggers for this device. 
 Static Scenes
 =============
 
-.. include:: ../snippets/data-pharos-mosaic.rst
-
 ``GET /logical_devices/{{device_id}}/static_scenes``
 
 Returns a JSON object including the list of available static scenes for this device. The object includes an array of scenes, with attributes for the scene ID, type, name and status.
@@ -107,8 +149,6 @@ Returns a JSON object including the list of available static scenes for this dev
 
 Fixture Groups
 ==============
-
-.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/fixture_groups``
 
@@ -226,8 +266,6 @@ Returns a JSON object including the list of available fixture groups for this de
 Timelines
 =========
 
-.. include:: ../snippets/data-pharos-mosaic.rst
-
 ``GET /logical_devices/{{device_id}}/timelines``
 
 Returns a JSON object including the list of available timelines for this device. The object includes an array of timelines, with attributes for the name, length (in seconds), current time and status.
@@ -284,8 +322,6 @@ Returns a JSON object including the list of available timelines for this device.
 
 Patch
 =====
-
-.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/patch``
 
@@ -405,8 +441,6 @@ Returns data about the patched universes, local and eDMX, for the device.
 Log
 ===
 
-.. include:: ../snippets/data-pharos-mosaic.rst
-
 ``GET /logical_devices/{{device_id}}/log_messages?lines={{lines}}``
 
 Requests a set of log messages from the controller. This request must be passed a query parameter:
@@ -485,8 +519,6 @@ Requests a set of log messages from the controller. This request must be passed 
 IO Modules
 ==========
 
-.. include:: ../snippets/data-pharos-mosaic.rst
-
 ``GET /logical_devices/{{device_id}}/io_modules``
 
 Requests the IO modules that are in use in the currently loaded project.
@@ -516,8 +548,6 @@ Requests the IO modules that are in use in the currently loaded project.
 
 IO Instances
 ============
-
-.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/io_instances``
 
@@ -567,8 +597,6 @@ Requests a list of instances of IO modules that are in use in the currently load
 Remote Devices
 ==============
 
-.. include:: ../snippets/data-pharos-mosaic.rst
-
 ``GET /logical_devices/{{device_id}}/remote_devices``
 
 Requests a list of remote devices in the currently loaded project.
@@ -593,8 +621,6 @@ Requests a list of remote devices in the currently loaded project.
 
 Expert Scenes
 =============
-
-.. include:: ../snippets/data-pharos-expert.rst
 
 ``GET /logical_devices/{{device_id}}/expert_scenes``
 
@@ -647,8 +673,6 @@ Each scene is identified by a unique number. Each scene has a ``name``, and a ``
 
 Expert Spaces
 =============
-
-.. include:: ../snippets/data-pharos-expert.rst
 
 ``GET /logical_devices/{{device_id}}/expert_spaces``
 
@@ -718,8 +742,6 @@ For each space the currently active scene and intensity master value is provided
 
 Expert Tag Sets
 ===============
-
-.. include:: ../snippets/data-pharos-expert.rst
 
 ``GET /logical_devices/{{device_id}}/expert_tag_sets``
 

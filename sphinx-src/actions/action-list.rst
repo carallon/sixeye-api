@@ -3,10 +3,91 @@ List of Available Device Actions
 
 There are different device actions available depending on the device type. This page lists the available actions, and the parameters expected with each one.
 
+
+.. list-table::
+   :header-rows: 1
+
+   * - Action Name
+     - Supported in Pharos / Mosaic Designer
+     - Supported in Pharos Expert
+   * - :ref:`simple_triggers_cond_v1`
+     - ✅
+     - ❌
+   * - :ref:`start_timelines_v1`
+     - ✅
+     - ❌
+   * - :ref:`start_scenes_v1`
+     - ✅
+     - ❌
+   * - :ref:`release_all_v1`
+     - ✅
+     - ❌
+   * - :ref:`release_timelines_v1`
+     - ✅
+     - ❌
+   * - :ref:`release_scenes_v1`
+     - ✅
+     - ❌
+   * - :ref:`set_groups_intensity_v1`
+     - ✅
+     - ❌
+   * - :ref:`set_rgb_override_v1`
+     - ✅
+     - ❌
+   * - :ref:`clear_rgb_override_v1`
+     - ✅
+     - ❌
+   * - :ref:`pause_timelines_v1`
+     - ✅
+     - ❌
+   * - :ref:`pause_all_timelines_v1`
+     - ✅
+     - ❌
+   * - :ref:`resume_timelines_v1`
+     - ✅
+     - ❌
+   * - :ref:`resume_all_timelines_v1`
+     - ✅
+     - ❌
+   * - :ref:`set_timelines_rate_v1`
+     - ✅
+     - ❌
+   * - :ref:`set_timelines_position_v1`
+     - ✅
+     - ❌
+   * - :ref:`toggle_timelines_v1`
+     - ✅
+     - ❌
+   * - :ref:`toggle_scenes_v1`
+     - ✅
+     - ❌
+   * - :ref:`triggers_cond_v1`
+     - ✅
+     - ❌
+   * - :ref:`beacon_v1`
+     - ✅
+     - ✅
+   * - :ref:`reset_v1`
+     - ✅
+     - ✅
+   * - :ref:`start_expert_scene_v1`
+     - ❌
+     - ✅
+   * - :ref:`activate_expert_space_off_v1`
+     - ❌
+     - ✅
+   * - :ref:`activate_expert_tag_v1`
+     - ❌
+     - ✅
+   * - :ref:`activate_set_space_intensity_master_v1`
+     - ❌
+     - ✅
+   * - :ref:`set_expert_rgb_override_v1`
+     - ❌
+     - ✅
+
 simple_triggers_cond_v1
 =======================
-
-.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action fires one or more trigger(s). It requires the following parameters:
 
@@ -58,8 +139,6 @@ This action fires one or more trigger(s). It requires the following parameters:
 
 start_timelines_v1
 ==================
-
-.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action starts one or more timelines. It requires the following parameters:
 
@@ -122,8 +201,6 @@ This action starts one or more timelines. It requires the following parameters:
 
 start_scenes_v1
 ===============
-
-.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action starts one or more scenes. It requires the following parameters:
 
@@ -188,8 +265,6 @@ This action starts one or more scenes. It requires the following parameters:
 release_all_v1
 ==============
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action allows the releasing of timelines, scenes or both. It requires the following parameters:
 
 .. list-table::
@@ -250,8 +325,6 @@ This action allows the releasing of timelines, scenes or both. It requires the f
 release_timelines_v1
 ====================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action allows the releasing of timelines. It requires the following parameters:
 
 .. list-table::
@@ -303,8 +376,6 @@ This action allows the releasing of timelines. It requires the following paramet
 release_scenes_v1
 =================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action allows the releasing of scenes. It requires the following parameters:
 
 .. list-table::
@@ -354,8 +425,6 @@ This action allows the releasing of scenes. It requires the following parameters
 
 set_groups_intensity_v1
 =======================
-
-.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows setting the intensity master of a group . It requires the following parameters:
 
@@ -423,8 +492,6 @@ This action allows setting the intensity master of a group . It requires the fol
 
 set_rgb_override_v1
 ===================
-
-.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows overriding the RGB colour of a group or fixture. It requires the following parameters:
 
@@ -516,8 +583,6 @@ This action allows overriding the RGB colour of a group or fixture. It requires 
 clear_rgb_override_v1
 =====================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action allows clearing an RGB colour of a group or fixture. It requires the following parameters:
 
 .. list-table::
@@ -578,8 +643,6 @@ This action allows clearing an RGB colour of a group or fixture. It requires the
 pause_timelines_v1
 ==================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action allows a specific timeline or timeline(s) to be paused. It requires the following parameters:
 
 .. list-table::
@@ -623,8 +686,6 @@ This action allows a specific timeline or timeline(s) to be paused. It requires 
 pause_all_timelines_v1
 ======================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action allows all timelines to be paused. It does not require additional parameters.
 
 .. collapse:: pause_all_timelines_v1 Example
@@ -652,8 +713,6 @@ This action allows all timelines to be paused. It does not require additional pa
 
 resume_timelines_v1
 ===================
-
-.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows a specific timeline or timeline(s) which have been paused to be resumed. It requires the following parameters:
 
@@ -699,8 +758,6 @@ This action allows a specific timeline or timeline(s) which have been paused to 
 resume_all_timelines_v1
 =======================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action allows any paused timelines to be resumed. It does not require additional parameters.
 
 .. collapse:: resume_all_timelines_v1 Example
@@ -728,8 +785,6 @@ This action allows any paused timelines to be resumed. It does not require addit
 
 set_timelines_rate_v1
 =====================
-
-.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action sets the rate (i.e. increases or decreases the playback speed) of one or more timelines. It requires the following parameters:
 
@@ -781,8 +836,6 @@ This action sets the rate (i.e. increases or decreases the playback speed) of on
 set_timelines_position_v1
 =========================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action jumps the position of playback of the specified timeline(s). It requires the following parameters:
 
 .. list-table::
@@ -833,8 +886,6 @@ This action jumps the position of playback of the specified timeline(s). It requ
 toggle_timelines_v1
 ===================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action toggles the playback of a timeline or timeline(s) - if it’s running, release it; if it’s not running, start it. Can optionally specify a release fade time in seconds. This action requires the following parameters:
 
 .. list-table::
@@ -881,8 +932,6 @@ This action toggles the playback of a timeline or timeline(s) - if it’s runnin
 toggle_scenes_v1
 ================
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action toggles the playback of a scene or scene(s) - if it’s running, release it; if it’s not running, start it. Can optionally specify a release fade time in seconds. This action requires the following parameters:
 
 .. list-table::
@@ -928,8 +977,6 @@ This action toggles the playback of a scene or scene(s) - if it’s running, rel
 
 triggers_cond_v1
 ================
-
-.. .. include:: ../snippets/action-pharos-mosaic.rst
 
 This action fires one or more trigger(s), including the option to fire a range of triggers. It requires the following parameters:
 
@@ -983,8 +1030,6 @@ This action fires one or more trigger(s), including the option to fire a range o
 beacon_v1
 =========
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action sets the controller to perform a physical beacon, typically blinking front panel LEDs or similar:
 
 .. list-table::
@@ -1029,8 +1074,6 @@ This action sets the controller to perform a physical beacon, typically blinking
 reset_v1
 ========
 
-.. include:: ../snippets/action-pharos-mosaic.rst
-
 This action tells the controller to reset. No parameters are required.
 
 .. WARNING::
@@ -1063,8 +1106,6 @@ This action tells the controller to reset. No parameters are required.
 
 start_expert_scene_v1
 =====================
-
-.. include:: ../snippets/action-pharos-expert.rst
 
 This action activates a scene in an Expert system.
 
@@ -1110,8 +1151,6 @@ This action activates a scene in an Expert system.
 activate_expert_space_off_v1
 ============================
 
-.. include:: ../snippets/action-pharos-expert.rst
-
 This action activates "Off" for a given Expert space or spaces.
 
 .. list-table::
@@ -1123,7 +1162,7 @@ This action activates "Off" for a given Expert space or spaces.
      - Description
    * - ``expertSpaceIds``
      - array of integers
-     - The space(s) in which to activate the Off state
+     - The space(s) in which to activate the Off scene
 
 .. collapse:: activate_expert_space_off_v1 Example
 
@@ -1154,8 +1193,6 @@ This action activates "Off" for a given Expert space or spaces.
 
 activate_expert_tag_v1
 ======================
-
-.. include:: ../snippets/action-pharos-expert.rst
 
 This action activates a given Tag for an Expert system.
 
@@ -1208,8 +1245,6 @@ This action activates a given Tag for an Expert system.
 activate_set_space_intensity_master_v1
 ======================================
 
-.. include:: ../snippets/action-pharos-expert.rst
-
 This action sets the intensity master for one or more spaces in an Expert system.
 
 .. list-table::
@@ -1260,8 +1295,6 @@ This action sets the intensity master for one or more spaces in an Expert system
 
 set_expert_rgb_override_v1
 ==========================
-
-.. include:: ../snippets/action-pharos-expert.rst
 
 This action allows overriding the RGB colour of an Expert space. It requires the following parameters:
 
