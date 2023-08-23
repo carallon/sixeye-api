@@ -8,7 +8,7 @@ Each GET returns the last known state and initiates communication with the devic
 Triggers
 ========
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/triggers``
 
@@ -66,7 +66,7 @@ Returns a JSON object including the list of available triggers for this device. 
 Static Scenes
 =============
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/static_scenes``
 
@@ -108,7 +108,7 @@ Returns a JSON object including the list of available static scenes for this dev
 Fixture Groups
 ==============
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/fixture_groups``
 
@@ -226,7 +226,7 @@ Returns a JSON object including the list of available fixture groups for this de
 Timelines
 =========
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/timelines``
 
@@ -285,7 +285,7 @@ Returns a JSON object including the list of available timelines for this device.
 Patch
 =====
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/patch``
 
@@ -405,7 +405,7 @@ Returns data about the patched universes, local and eDMX, for the device.
 Log
 ===
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/log_messages?lines={{lines}}``
 
@@ -485,7 +485,7 @@ Requests a set of log messages from the controller. This request must be passed 
 IO Modules
 ==========
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/io_modules``
 
@@ -517,7 +517,7 @@ Requests the IO modules that are in use in the currently loaded project.
 IO Instances
 ============
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/io_instances``
 
@@ -567,7 +567,7 @@ Requests a list of instances of IO modules that are in use in the currently load
 Remote Devices
 ==============
 
-Applies to Pharos Controllers.
+.. include:: ../snippets/data-pharos-mosaic.rst
 
 ``GET /logical_devices/{{device_id}}/remote_devices``
 
@@ -589,4 +589,206 @@ Requests a list of remote devices in the currently loaded project.
                     }
                 }
             ]
+        }
+
+Expert Scenes
+=============
+
+.. include:: ../snippets/data-pharos-expert.rst
+
+``GET /logical_devices/{{device_id}}/expert_scenes``
+
+Requests a list of the available scenes for an Expert device.
+
+Each scene is identified by a unique number. Each scene has a ``name``, and a ``parent_space_id`` to identify the space the scene is located in.
+
+
+.. collapse:: Example response
+
+    .. code-block:: json
+
+        {
+            "scenes": {
+                "0": {
+                    "parent_space_id": 5,
+                    "name": "Off"
+                },
+                "3": {
+                    "parent_space_id": 1,
+                    "name": "Worklights "
+                },
+                "2": {
+                    "parent_space_id": 1,
+                    "name": "Security"
+                },
+                "4": {
+                    "parent_space_id": 2,
+                    "name": "Bright entrance"
+                },
+                "5": {
+                    "parent_space_id": 2,
+                    "name": "Default"
+                },
+                "6": {
+                    "parent_space_id": 2,
+                    "name": "Functional"
+                },
+                "7": {
+                    "parent_space_id": 2,
+                    "name": "After hours"
+                },
+                "8": {
+                    "parent_space_id": 4,
+                    "name": "Decay"
+                }
+            }
+        }
+
+
+Expert Spaces
+=============
+
+.. include:: ../snippets/data-pharos-expert.rst
+
+``GET /logical_devices/{{device_id}}/expert_spaces``
+
+Requests a list of the available spaces for an Expert device.
+
+Each space is identified by a unique number. Each space has a ``name``, and a ``parent_id`` to identify the parent of the space. If the parent is 0xFFFFFFFF(4294967295), this indicates it is the root space.
+
+For each space the currently active scene and intensity master value is provided. If the active scene is 0, that indicates no active scene / off. If the active scene is 0xFFFFFFFF(4294967295), this indicates that levels are being controlled by a scene in the parent space(s).
+
+
+.. collapse:: Example response
+
+    .. code-block:: json
+
+        {
+            "spaces": {
+                "1": {
+                    "parent_id": 4294967295,
+                    "name": "Project Space",
+                    "scene": 2,
+                    "int_master": 100
+                },
+                "2": {
+                    "parent_id": 1,
+                    "name": "Entrance",
+                    "scene": 4294967295,
+                    "int_master": 0
+                },
+                "3": {
+                    "parent_id": 1,
+                    "name": "Restaurant",
+                    "scene": 4294967295,
+                    "int_master": 0
+                },
+                "4": {
+                    "parent_id": 3,
+                    "name": "Restaurant - Bar",
+                    "scene": 0,
+                    "int_master": 100
+                },
+                "6": {
+                    "parent_id": 1,
+                    "name": "Lounge",
+                    "scene": 4294967295,
+                    "int_master": 0
+                },
+                "7": {
+                    "parent_id": 1,
+                    "name": "Patio",
+                    "scene": 4294967295,
+                    "int_master": 0
+                },
+                "8": {
+                    "parent_id": 7,
+                    "name": "Patio Firepit",
+                    "scene": 0,
+                    "int_master": 100
+                },
+                "5": {
+                    "parent_id": 3,
+                    "name": "Restaurant - Cove",
+                    "scene": 0,
+                    "int_master": 100
+                }
+            }
+        }
+
+Expert Tag Sets
+===============
+
+.. include:: ../snippets/data-pharos-expert.rst
+
+``GET /logical_devices/{{device_id}}/expert_tag_sets``
+
+Requests a list of the available tag sets and tags for an Expert device.
+
+Each tag set contains a set of tags, identified by an ``id`` number and a ``name``.
+
+Each tag set has a currently active tag, indicated by ``value_id``. Each tag set also has a ``name``.
+
+
+.. collapse:: Example response
+
+    .. code-block:: json
+
+        {
+            "tag_sets": {
+                "1": {
+                    "value_id": 2,
+                    "name": "Type of day",
+                    "values": [
+                        {
+                            "name": "Weekend",
+                            "id": 1
+                        },
+                        {
+                            "name": "Workdays",
+                            "id": 2
+                        }
+                    ]
+                },
+                "2": {
+                    "value_id": 3,
+                    "name": "Mode",
+                    "values": [
+                        {
+                            "name": "Default",
+                            "id": 1
+                        },
+                        {
+                            "name": "Cleaning",
+                            "id": 2
+                        },
+                        {
+                            "name": "Emergency",
+                            "id": 3
+                        }
+                    ]
+                },
+                "3": {
+                    "value_id": 4,
+                    "name": "Usage",
+                    "values": [
+                        {
+                            "name": "Lunch",
+                            "id": 1
+                        },
+                        {
+                            "name": "Corporate",
+                            "id": 2
+                        },
+                        {
+                            "name": "Dinner",
+                            "id": 3
+                        },
+                        {
+                            "name": "Club",
+                            "id": 4
+                        }
+                    ]
+                }
+            }
         }

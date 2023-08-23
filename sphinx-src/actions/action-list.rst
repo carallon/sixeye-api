@@ -6,7 +6,7 @@ There are different device actions available depending on the device type. This 
 simple_triggers_cond_v1
 =======================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action fires one or more trigger(s). It requires the following parameters:
 
@@ -59,7 +59,7 @@ This action fires one or more trigger(s). It requires the following parameters:
 start_timelines_v1
 ==================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action starts one or more timelines. It requires the following parameters:
 
@@ -123,7 +123,7 @@ This action starts one or more timelines. It requires the following parameters:
 start_scenes_v1
 ===============
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action starts one or more scenes. It requires the following parameters:
 
@@ -188,7 +188,7 @@ This action starts one or more scenes. It requires the following parameters:
 release_all_v1
 ==============
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows the releasing of timelines, scenes or both. It requires the following parameters:
 
@@ -250,7 +250,7 @@ This action allows the releasing of timelines, scenes or both. It requires the f
 release_timelines_v1
 ====================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows the releasing of timelines. It requires the following parameters:
 
@@ -303,7 +303,7 @@ This action allows the releasing of timelines. It requires the following paramet
 release_scenes_v1
 =================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows the releasing of scenes. It requires the following parameters:
 
@@ -355,7 +355,7 @@ This action allows the releasing of scenes. It requires the following parameters
 set_groups_intensity_v1
 =======================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows setting the intensity master of a group . It requires the following parameters:
 
@@ -424,7 +424,7 @@ This action allows setting the intensity master of a group . It requires the fol
 set_rgb_override_v1
 ===================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows overriding the RGB colour of a group or fixture. It requires the following parameters:
 
@@ -516,7 +516,7 @@ This action allows overriding the RGB colour of a group or fixture. It requires 
 clear_rgb_override_v1
 =====================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows clearing an RGB colour of a group or fixture. It requires the following parameters:
 
@@ -578,7 +578,7 @@ This action allows clearing an RGB colour of a group or fixture. It requires the
 pause_timelines_v1
 ==================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows a specific timeline or timeline(s) to be paused. It requires the following parameters:
 
@@ -623,7 +623,7 @@ This action allows a specific timeline or timeline(s) to be paused. It requires 
 pause_all_timelines_v1
 ======================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows all timelines to be paused. It does not require additional parameters.
 
@@ -653,7 +653,7 @@ This action allows all timelines to be paused. It does not require additional pa
 resume_timelines_v1
 ===================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows a specific timeline or timeline(s) which have been paused to be resumed. It requires the following parameters:
 
@@ -699,7 +699,7 @@ This action allows a specific timeline or timeline(s) which have been paused to 
 resume_all_timelines_v1
 =======================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action allows any paused timelines to be resumed. It does not require additional parameters.
 
@@ -729,7 +729,7 @@ This action allows any paused timelines to be resumed. It does not require addit
 set_timelines_rate_v1
 =====================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action sets the rate (i.e. increases or decreases the playback speed) of one or more timelines. It requires the following parameters:
 
@@ -781,7 +781,7 @@ This action sets the rate (i.e. increases or decreases the playback speed) of on
 set_timelines_position_v1
 =========================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action jumps the position of playback of the specified timeline(s). It requires the following parameters:
 
@@ -833,7 +833,7 @@ This action jumps the position of playback of the specified timeline(s). It requ
 toggle_timelines_v1
 ===================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action toggles the playback of a timeline or timeline(s) - if it’s running, release it; if it’s not running, start it. Can optionally specify a release fade time in seconds. This action requires the following parameters:
 
@@ -881,7 +881,7 @@ This action toggles the playback of a timeline or timeline(s) - if it’s runnin
 toggle_scenes_v1
 ================
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action toggles the playback of a scene or scene(s) - if it’s running, release it; if it’s not running, start it. Can optionally specify a release fade time in seconds. This action requires the following parameters:
 
@@ -929,7 +929,7 @@ This action toggles the playback of a scene or scene(s) - if it’s running, rel
 triggers_cond_v1
 ================
 
-.. .. include:: ../snippets/pharos-mosaic.rst
+.. .. include:: ../snippets/action-pharos-mosaic.rst
 
 This action fires one or more trigger(s), including the option to fire a range of triggers. It requires the following parameters:
 
@@ -983,7 +983,7 @@ This action fires one or more trigger(s), including the option to fire a range o
 beacon_v1
 =========
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action sets the controller to perform a physical beacon, typically blinking front panel LEDs or similar:
 
@@ -1029,7 +1029,7 @@ This action sets the controller to perform a physical beacon, typically blinking
 reset_v1
 ========
 
-.. include:: ../snippets/pharos-mosaic.rst
+.. include:: ../snippets/action-pharos-mosaic.rst
 
 This action tells the controller to reset. No parameters are required.
 
@@ -1052,6 +1052,293 @@ This action tells the controller to reset. No parameters are required.
                             "typeId": "reset_v1",
                             "logicalDeviceId": "{{device_id}}",
                             "params": [
+                            ],
+                            "index": 1
+                        }
+                    ]
+                }
+            }
+        }
+
+
+start_expert_scene_v1
+=====================
+
+.. include:: ../snippets/action-pharos-expert.rst
+
+This action activates a scene in an Expert system.
+
+.. list-table::
+   :widths: 3 3 10
+   :header-rows: 1
+
+   * - Parameter
+     - Value Type
+     - Description
+   * - ``expertSceneId``
+     - integer
+     - The ID of the scene to be activated
+
+.. collapse:: start_expert_scene_v1 Example
+
+    This example will activate scene 1 in the system.
+
+    .. code-block:: json
+
+        {
+            "data": {
+                "attributes": {
+                    "projectId": "{{project_id}}",
+                    "actions": [
+                        {
+                            "typeId": "start_expert_scene_v1",
+                            "logicalDeviceId": "{{device_id}}",
+                            "params": [
+                                {
+                                "key": "expertSceneId",
+                                "value": 1
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ]
+                }
+            }
+        }
+
+
+activate_expert_space_off_v1
+============================
+
+.. include:: ../snippets/action-pharos-expert.rst
+
+This action activates "Off" for a given Expert space or spaces.
+
+.. list-table::
+   :widths: 3 3 10
+   :header-rows: 1
+
+   * - Parameter
+     - Value Type
+     - Description
+   * - ``expertSpaceIds``
+     - array of integers
+     - The space(s) in which to activate the Off state
+
+.. collapse:: activate_expert_space_off_v1 Example
+
+    This example will activate "Off" in Space 2.
+
+    .. code-block:: json
+
+        {
+            "data": {
+                "attributes": {
+                    "projectId": "{{project_id}}",
+                    "actions": [
+                        {
+                            "typeId": "activate_expert_space_off_v1",
+                            "logicalDeviceId": "{{device_id}}",
+                            "params": [
+                                {
+                                    "key": "expertSpaceIds",
+                                    "value": [2]
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ]
+                }
+            }
+        }
+
+activate_expert_tag_v1
+======================
+
+.. include:: ../snippets/action-pharos-expert.rst
+
+This action activates a given Tag for an Expert system.
+
+.. list-table::
+   :widths: 3 3 10
+   :header-rows: 1
+
+   * - Parameter
+     - Value Type
+     - Description
+   * - ``tagSetId``
+     - integer
+     - The tag set containing the tag to be activated
+   * - ``tagId``
+     - integer
+     - The numeric ID of the tag to be activated
+
+
+.. collapse:: activate_expert_tag_v1 Example
+
+    This example will tag 3 of tag set 2.
+
+    .. code-block:: json
+
+        {
+            "data": {
+                "attributes": {
+                    "projectId": "{{project_id}}",
+                    "actions": [
+                        {
+                            "typeId": "activate_expert_tag_v1",
+                            "logicalDeviceId": "{{device_id}}",
+                            "params": [
+                                {
+                                    "key": "tagSetId",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "tagId",
+                                    "value": 3
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ]
+                }
+            }
+        }
+
+activate_set_space_intensity_master_v1
+======================================
+
+.. include:: ../snippets/action-pharos-expert.rst
+
+This action sets the intensity master for one or more spaces in an Expert system.
+
+.. list-table::
+   :widths: 3 3 10
+   :header-rows: 1
+
+   * - Parameter
+     - Value Type
+     - Description
+   * - ``expertSpaceIds``
+     - array of integer
+     - The tag set containing the tag to be activated
+   * - ``intensity``
+     - integer (0-100)
+     - The intensity master level to apply, in percent
+
+
+.. collapse:: activate_set_space_intensity_master_v1 Example
+
+    This example will master the intensity of space 1 and 2 to 80%.
+
+    .. code-block:: json
+
+        {
+            "data": {
+                "attributes": {
+                    "projectId": "{{project_id}}",
+                    "actions": [
+                        {
+                            "typeId": "activate_set_space_intensity_master_v1",
+                            "logicalDeviceId": "{{device_id}}",
+                            "params": [
+                                {
+                                "key": "expertSpaceIds",
+                                "value" : [1, 2]
+                                },
+                                {
+                                "key": "intensity",
+                                "value": 80
+                                }
+                            ],
+                            "index": 1
+                        }
+                    ]
+                }
+            }
+        }
+
+set_expert_rgb_override_v1
+==========================
+
+.. include:: ../snippets/action-pharos-expert.rst
+
+This action allows overriding the RGB colour of an Expert space. It requires the following parameters:
+
+.. list-table::
+   :widths: 3 3 10
+   :header-rows: 1
+
+   * - Parameter
+     - Value Type
+     - Description
+   * - ``target``
+     - string
+     - What to override. Currently only ``space`` is supported.
+   * - ``expertSpaceIds``
+     - array of space IDs
+     - The spaces to apply the override to.
+   * - ``fadeMilliSecs``
+     - integer
+     - The fade time to apply the colour change, in milliseconds
+   * - ``path``
+     - string
+     - The crossfade path to use when applying the override. One of ``default``, ``linear``, ``start``, ``end``, ``braked``, ``accelerated``, ``damped``, ``overshoot``, ``col_at_start``, ``col_at_end``, ``int_at_start``, ``int_at_end``, ``colour_first``, ``intensity_first``.
+   * - ``intensity``
+     - float
+     - The intensity to set, in percent from 0.0 to 100.0. Defaults to 100.0 if omitted
+   * - ``red``
+     - float
+     - The red value to set, in percent from 0.0 to 100.0. Defaults to 0.0 if omitted
+   * - ``green``
+     - float
+     - The green value to set, in percent from 0.0 to 100.0. Defaults to 0.0 if omitted
+   * - ``blue``
+     - float
+     - The blue value to set, in percent from 0.0 to 100.0. Defaults to 0.0 if omitted
+   * - ``temperature``
+     - float
+     - The colour temperature value to set, from 0.0 (Cool) to 100.0 (Warm). Defaults to 50.0 if omitted
+
+.. collapse:: set_expert_rgb_override_v1 Example
+
+    This example will set group 1 to an RGB value of (246, 141, 46) in 0-255 notation, with a 5 second fade.
+
+    .. code-block:: json
+
+        {
+            "data": {
+                "attributes": {
+                    "projectId": "{{project_id}}",
+                    "actions": [
+                        {
+                            "typeId": "set_expert_rgb_override_v1",
+                            "logicalDeviceId": "{{device_id}}",
+                            "params": [
+                                {
+                                    "key": "target",
+                                    "value": "space"
+                                },
+                                {
+                                    "key": "expertSpaceIds",
+                                    "value": [1]
+                                },
+                                {
+                                    "key": "red",
+                                    "value": 96.4
+                                },
+                                {
+                                    "key": "green",
+                                    "value": 55.3
+                                },
+                                {
+                                    "key": "blue",
+                                    "value": 18.0
+                                },
+                                {
+                                    "key": "fadeMilliSecs",
+                                    "value": 5000
+                                }
                             ],
                             "index": 1
                         }
